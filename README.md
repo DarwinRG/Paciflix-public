@@ -8,36 +8,35 @@ Paciflix is a streaming site that offers a wide variety of movies and TV shows. 
 
 ## ✨ Features
 
-- User-friendly interface
-- High-quality streaming
-- Wide variety of movies and TV shows
-- Multiple device support
-- Regular content updates
-- Multi-language subtitles
-- Secure and private
+-   User-friendly interface
+-   High-quality streaming
+-   Wide variety of movies and TV shows
+-   Multiple device support
+-   Regular content updates
+-   Multi-language subtitles
+-   Secure and private
 
 &nbsp;
-
 
 ## 🌐Website Link
 
 ### Main
+
 https://paciflix.darwinrg.me/
 
-
 ### Backup
-https://paciflix.darwinrg.tech/
 
+https://paciflix.darwinrg.tech/
 
 ## 🙏 Acknowledgements
 
-- [Embed.su](https://embed.su/) (Video Content)
+-   [Embed.su](https://embed.su/) (Video Content)
 
-  &nbsp;
+    &nbsp;
 
 ## 🧑 Author
 
-- [@DarwinRG](https://github.com/DarwinRG)
+-   [@DarwinRG](https://github.com/DarwinRG)
 
 &nbsp;
 
@@ -45,16 +44,16 @@ https://paciflix.darwinrg.tech/
 
 ### Major Requirements
 
-- PHP 8 or higher
-- Composer
-- MySQL or any other supported database
-- Web server (Apache, Nginx, etc.)
-- Node.js and npm (for frontend dependencies)
-- Git (for version control)
+-   PHP 8 or higher
+-   Composer
+-   MySQL or any other supported database
+-   Web server (Apache, Nginx, etc.)
+-   Node.js and npm (for frontend dependencies)
+-   Git (for version control)
 
 ### API Integration
 
-- [The Movie Database](https://www.themoviedb.org/)
+-   [The Movie Database](https://www.themoviedb.org/)
 
 &nbsp;
 
@@ -76,13 +75,13 @@ You can download the repository as a ZIP file and extract it, or you can clone t
 2. Run the following command to clone the repository:
 
 ```sh
-git clone https://github.com/DarwinRG/Paciflix.git
+git clone https://github.com/DarwinRG/Paciflix-public.git
 ```
 
 3. Navigate to the project directory:
 
 ```sh
-cd Paciflix
+cd Paciflix-public
 ```
 
 ### ⚙️ Initial Setup
@@ -92,12 +91,12 @@ cd Paciflix
 ```sh
 composer install
 ```
+
 2. Create the Environment Variables
 
 ```sh
 cp .env.example .env
 ```
-
 
 3. Generate Application key
 
@@ -118,22 +117,12 @@ npm install
 To run this project, you will need to configure the following variables to the **.env**
 
 ### TMDB API TOKEN
+
 ```sh
 TMDB_TOKEN=
 ```
+
 You need to get your TMDB Token at https://www.themoviedb.org/
-
-
-### DATABASE CONFIGS
-```sh
-DB_CONNECTION=
-DB_HOST=
-DB_PORT=
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
-```
-
 
 &nbsp;
 
@@ -144,11 +133,13 @@ After setting up the environment and installing the dependencies, you can run th
 ```sh
 php artisan serve
 ```
+
 Then create a new terminal and create a new node development server
 
 ```sh
 npm run dev
 ```
+
 &nbsp;
 
 ## 📊 Output
@@ -163,17 +154,21 @@ You can now visit http://127.0.0.1:8000 to view the application.
 
 ## 📈 Screenshots
 
-### Login Page
-![Screenshot](public/ss_login.jpeg)
+### Movies Page
 
-### Homepage
-![Screenshot](public/ss_home.jpeg)
+![Movies](public/ss_movies.jpeg)
 
-### TVSHOW
-![Screenshot](public/ss_tvshow.jpeg)
+### TV Shows Page
 
-### Player
+![Screenshot](public/ss_tv.jpeg)
+
+### Player Page
+
 ![Screenshot](public/ss_player.jpeg)
+
+### Search Page
+
+![Screenshot](public/ss_search.jpeg)
 
 &nbsp;
 
