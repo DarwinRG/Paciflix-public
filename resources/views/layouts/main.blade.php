@@ -50,14 +50,13 @@
                     <li class="nav-item col-12 col-md-auto align-items-center px-1 py-1">
                         <form class="d-flex" action="{{ route('search') }}" method="GET">
                             <div class="input-group">
-                                <input class="form-control w-50" type="search" name="query" placeholder="Search "
+                                <input class="form-control w-50" type="search" name="query" placeholder="Search for"
                                     aria-label="Search">
                                 <select class="form-select w-25" name="type">
                                     <option value="movie">Movie</option>
                                     <option value="tv">TV</option>
                                 </select>
-                                <button class="btn btn-success" type="submit"><i class="bi bi-search"></i>
-                                    Search</button>
+                                <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
                             </div>
                         </form>
                     </li>

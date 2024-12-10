@@ -2,14 +2,40 @@
 
 @section('content')
 <div class="container">
-    <div class="ratio ratio-21x9 mb-4 d-none d-lg-block">
-        <iframe src="https://embed.su/embed/movie/{{ $movie['id'] }}" allow="autoplay; encrypted-media"
-            allowfullscreen></iframe>
+<div class="container">
+        <div class="text-center">
+            <h1 class="text-3xl fw-bold my-4">YOUR OCEAN OF ENTERTAINMENT</h1>
+        </div>
+        <div class="ratio ratio-21x9 d-none d-lg-block">
+            <iframe id="movieFrame" src="https://embed.su/embed/movie/{{ $movie['id'] }}"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="ratio ratio-1x1 d-lg-none">
+            <iframe id="movieFrame" src="https://embed.su/embed/movie/{{ $movie['id'] }}"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="text-center mt-2 my-5 dropdown-center">
+            <button class="btn btn-primary btn-lg dropdown-toggle " type="button" id="serverDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Change Server
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="serverDropdown">
+                <li><a class="dropdown-item fw-bold text-info text-center" href="#"
+                        onclick="changeMovieServer('https://embed.su/embed/movie/{{ $movie['id']}}')">Primary</a></li>
+                <li><a class="dropdown-item fw-bold text-white text-center" href="#"
+                        onclick="changeMovieServer('https://multiembed.mov/directstream.php?video_id={{ $movie['id']}}&tmdb=1')">Secondary</a>
+                </li>
+                <li><a class="dropdown-item fw-bold text-success text-center" href="#"
+                        onclick="changeMovieServer('https://vidlink.pro/movie/{{ $movie['id']}}')">Backup</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="ratio ratio-1x1 mb-4 d-lg-none">
-        <iframe src="https://embed.su/embed/movie/{{ $movie['id'] }}" allow="autoplay; encrypted-media"
-            allowfullscreen></iframe>
-    </div>
+
+    <script>
+        function changeMovieServer(url) {
+            document.getElementById('movieFrame').src = url;
+        }
+    </script>
 
     <div class="row">
         <div class="col-md-4">
