@@ -6,7 +6,7 @@
         <div class="text-center">
             <h1 class="text-3xl fw-bold my-4">YOUR OCEAN OF ENTERTAINMENT</h1>
         </div>
-        <div class="ratio ratio-21x9 d-none d-lg-block">
+        <div class="ratio ratio-16x9 d-none d-lg-block">
             <iframe id="tvFrame" src="https://embed.su/embed/tv/{{ $tvshow['id'] }}/1/1"
                 allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
