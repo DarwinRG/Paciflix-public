@@ -2,19 +2,18 @@
 
 @section('content')
 <div class="container mx-auto px-4 pt-8">
-
     <div class="d-none d-md-block">
         <div id="popularMoviesCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 @foreach ($popularMovies as $index => $movie)
                     <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                         <a href="{{ route('movies.show', $movie['id']) }}">
-                            <img src="{{ $movie['backdrop_path'] }}" class="d-block w-100" alt="{{ $movie['title'] }}"
+                            <img src="{{ $movie['backdrop_path'] }}" class="d-block w-100 rounded-bottom-3" alt="{{ $movie['title'] }}"
                                 style="aspect-ratio: 21/9; object-fit: cover;">
                         </a>
-                        <div class="carousel-caption d-none d-md-block rounded bg-dark bg-opacity-50 shadow text-gray">
-                            <h5 style="color: #08bffb">{{ $movie['title'] }}</h5>
-                            <p>{{ $movie['overview'] }}</p>
+                        <div class="carousel-caption d-none d-md-block rounded-3 bg-dark bg-opacity-50 shadow">
+                            <h5 class="fw-bold fs-1" style="color: #08bffb">{{ $movie['title'] }}</h5>
+                            <p class="px-4 text-white">{{ $movie['overview'] }}</p>
                         </div>
                     </div>
                 @endforeach

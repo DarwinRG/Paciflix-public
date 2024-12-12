@@ -6,15 +6,15 @@
         <h1 class="text-3xl fw-bold my-4">YOUR OCEAN OF ENTERTAINMENT</h1>
     </div>
     <div class="ratio ratio-16x9 d-none d-lg-block">
-        <iframe id="tvFrame" src="https://embed.su/embed/tv/{{ $tvshow['id'] }}/1/1" allow="autoplay; encrypted-media"
+        <iframe class="rounded-4" id="tvFrame" src="https://embed.su/embed/tv/{{ $tvshow['id'] }}/1/1" allow="autoplay; encrypted-media"
             allowfullscreen></iframe>
     </div>
     <div class="ratio ratio-1x1 d-lg-none">
-        <iframe id="tvFrame" src="https://embed.su/embed/tv/{{ $tvshow['id'] }}/1/1" allow="autoplay; encrypted-media"
+        <iframe class="rounded-4" id="tvFrame" src="https://embed.su/embed/tv/{{ $tvshow['id'] }}/1/1" allow="autoplay; encrypted-media"
             allowfullscreen></iframe>
     </div>
     <div class="text-center mt-2 my-5 dropdown-center">
-        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="serverDropdown"
+        <button class="btn btn-primary btn-lg dropdown-toggle rounded-5" type="button" id="serverDropdown"
             data-bs-toggle="dropdown" aria-expanded="false">
             Change Server
         </button>

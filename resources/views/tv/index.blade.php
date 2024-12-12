@@ -8,12 +8,12 @@
                 @foreach ($popularTv as $index => $tvshow)
                     <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                         <a href="{{ route('tv.show', $tvshow['id']) }}">
-                            <img src="{{ $tvshow['backdrop_path'] }}" class="d-block w-100" alt="{{ $tvshow['name'] }}"
+                            <img src="{{ $tvshow['backdrop_path'] }}" class="d-block w-100 rounded-bottom-3" alt="{{ $tvshow['name'] }}"
                                 style="aspect-ratio: 21/9; object-fit: cover;">
                         </a>
-                        <div class="carousel-caption d-none d-md-block rounded bg-dark bg-opacity-50">
-                            <h5 style="color: #08bffb">{{ $tvshow['name'] }}</h5>
-                            <p>{{ $tvshow['overview'] }}</p>
+                        <div class="carousel-caption d-none d-md-block rounded bg-dark bg-opacity-50 shadow">
+                            <h5 class="fw-bold fs-1" style="color: #08bffb">{{ $tvshow['name'] }}</h5>
+                            <p class="px-4 text-white">{{ $tvshow['overview'] }}</p>
                         </div>
                     </div>
                 @endforeach
