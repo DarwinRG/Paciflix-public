@@ -30,7 +30,9 @@ https://paciflix.darwinrg.tech/
 
 ## 🙏 Acknowledgements
 
--   [Embed.su](https://embed.su/) (Video Content)
+-   [⭐Embed.su](https://embed.su/) (Video Content)
+-   [⭐VidBinge.com](https://www.vidbinge.com/) (Video Content)
+-   [⭐Vidlink.pro](https://vidlink.pro/) (Video Content)
 
     &nbsp;
 
@@ -51,7 +53,7 @@ https://paciflix.darwinrg.tech/
 -   Node.js and npm (for frontend dependencies)
 -   Git (for version control)
 
-### API Integration
+### 🧩 API Integration
 
 -   [The Movie Database](https://www.themoviedb.org/)
 
