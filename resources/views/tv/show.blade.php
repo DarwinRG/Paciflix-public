@@ -29,10 +29,10 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const serverLinks = document.querySelectorAll('.dropdown-item');
         serverLinks.forEach(link => {
-            link.addEventListener('click', function (event) {
+            link.addEventListener('click', function(event) {
                 event.preventDefault();
                 const url = this.getAttribute('data-server-url');
                 changeTvServer(url);
@@ -59,28 +59,28 @@
                         data-name="star" />
                 </g>
             </svg>
-            <span>{{ $tvshow['vote_average'] }}</span>
+            <span class="fw-bold">{{ $tvshow['vote_average'] }}</span>
             <span class="mx-2">|</span>
-            <span>{{ $tvshow['first_air_date'] }}</span>
+            <span class="fw-bold">{{ $tvshow['first_air_date'] }}</span>
             <span class="mx-2">|</span>
-            <span>{{ $tvshow['genres'] }}</span>
+            <span class="fw-bold">{{ $tvshow['genres'] }}</span>
         </div>
 
         <div class="text-info">
-            <h3 class="text-2xl font-semibold">Overview</h3>
+            <h3 class="text-2xl fw-bold">Overview</h3>
             <p class="text-light">
                 {{ $tvshow['overview'] }}
             </p>
         </div>
 
         <div class="mt-4">
-            <h3 class="text-2xl font-semibold text-info">Creator</h3>
+            <h3 class="text-2xl fw-bold text-info">Creator</h3>
             <div class="row mt-2">
                 @foreach ($tvshow['created_by'] as $crew)
-                    <div class="col-md-4 mb-2">
-                        <div class="text-light">{{ $crew['name'] }}</div>
-                        <div class="text-info text-opacity-75">Creator</div>
-                    </div>
+                <div class="col-md-4 mb-2">
+                    <div class="text-light fw-bold">{{ $crew['name'] }}</div>
+                    <div class="text-opacity-75">Creator</div>
+                </div>
                 @endforeach
             </div>
         </div>
@@ -88,16 +88,16 @@
 </div>
 
 <div class="mt-5 mb-4">
-    <h2 class="text-4xl mb-2 font-semibold text-info">Cast</h2>
+    <h2 class="text-4xl mb-2 fw-bold text-info">Characters</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
         @foreach ($tvshow['cast'] as $cast)
-            <div class="col">
-                <img src="{{ $cast['profile_path'] }}" alt="actor1" class="img-fluid rounded hover-opacity">
-                <div class="mt-2">
-                    <div class="text-primary text-opacity-75 fw-bold">{{ $cast['character'] }}</div>
-                    <span class="text-light">{{ $cast['name'] }}</span>
-                </div>
+        <div class="col">
+            <img src="{{ $cast['profile_path'] }}" alt="actor1" class="img-fluid rounded hover-opacity">
+            <div class="mt-2">
+                <div class="text-opacity-75 fw-bold">{{ $cast['character'] }}</div>
+                <span class="text-light">{{ $cast['name'] }}</span>
             </div>
+        </div>
         @endforeach
     </div>
 </div>
