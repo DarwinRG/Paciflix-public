@@ -13,12 +13,12 @@
     <title>Paciflix | 🌊Your ocean of entertainment🍿</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('logo.png') }}" type="image/png">
+    <link rel="icon" href="{{ secure_asset('logo.png') }}" type="image/png">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Scripts -->
@@ -30,7 +30,7 @@
     <nav class="navbar navbar-dark bg-gray-900 shadow sticky-top navbar-expand-lg">
         <div class="container">
             <a class="fw-bold ms-4" href="{{ route('movies.index') }}">
-                <img src="{{ asset('logo.png') }}" alt="Paciflix" class="d-inline-block align-text-top" height="100"
+                <img src="{{ secure_asset('logo.png') }}" alt="Paciflix" class="d-inline-block align-text-top" height="100"
                     width="100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOne"
