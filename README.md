@@ -4,7 +4,7 @@
 
 # 🌊 Paciflix 🍿
 
-Paciflix is a streaming site that offers a wide variety of movies and TV shows. Enjoy seamless streaming with our user-friendly interface and high-quality content.
+Paciflix is a streaming web application that offers a wide variety of movies and TV shows. Enjoy seamless streaming with our user-friendly interface and high-quality content.
 
 ## ✨ Features
 
@@ -84,6 +84,12 @@ git clone https://github.com/DarwinRG/Paciflix-public.git
 
 ```sh
 cd Paciflix-public
+```
+
+4. Then use this command to open the project in a new window
+
+```sh
+code .
 ```
 
 ### ⚙️ Initial Setup
