@@ -1,32 +1,45 @@
+<div align="center">
+
 ![Logo](public/logo.png)
 
 &nbsp;
 
-# 🌊 Paciflix 🍿
+# 🌊 Paciflix - Public 🍿
 
 Paciflix is a streaming web application that offers a wide variety of movies and TV shows. Enjoy seamless streaming with our user-friendly interface and high-quality content.
 
+` This version doesn't have a login and sign up system.`
 ## ✨ Features
 
--   User-friendly interface
--   High-quality streaming
--   Wide variety of movies and TV shows
--   Multiple device support
--   Regular content updates
--   Multi-language subtitles
--   Secure and private
+**User-friendly interface**
+
+**High-quality streaming**
+
+**Wide variety of movies and TV shows**
+
+**Multiple device support**
+
+**Regular content updates**
+
+**Multi-language subtitles**
+
+**Secure and private**
 
 &nbsp;
 
-## 🌐Website Link
+## 🌐 Website Link
 
-### Main
+### 🌠 Main
 
 https://paciflix.darwinrg.me/
 
-### Backup
+### 🟢 Backup
 
 https://paciflix.darwinrg.tech/
+
+
+</div>
+&nbsp;
 
 ## 🙏 Acknowledgements
 
